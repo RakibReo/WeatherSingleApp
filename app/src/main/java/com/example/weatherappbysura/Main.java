@@ -1,0 +1,85 @@
+package com.example.weatherappbysura;
+
+import com.google.gson.annotations.SerializedName;
+
+public class Main{
+
+	@SerializedName("temp")
+	private Object temp;
+
+	@SerializedName("temp_min")
+	private Object tempMin;
+
+	@SerializedName("humidity")
+	private int humidity;
+
+	@SerializedName("pressure")
+	private int pressure;
+
+	@SerializedName("feels_like")
+	private Object feelsLike;
+
+	@SerializedName("temp_max")
+	private Object tempMax;
+
+	public void setTemp(Object temp){
+		this.temp = temp;
+	}
+
+	public Object getTemp(){
+		return temp;
+	}
+
+	public void setTempMin(Object tempMin){
+		this.tempMin = tempMin;
+	}
+
+	public Object getTempMin(){
+		return tempMin;
+	}
+
+	public void setHumidity(int humidity){
+		this.humidity = humidity;
+	}
+
+	public int getHumidity(){
+		return humidity;
+	}
+
+	public void setPressure(int pressure){
+		this.pressure = pressure;
+	}
+
+	public int getPressure(){
+		return pressure;
+	}
+
+	public void setFeelsLike(Object feelsLike){
+		this.feelsLike = feelsLike;
+	}
+
+	public Object getFeelsLike(){
+		return feelsLike;
+	}
+
+	public void setTempMax(Object tempMax){
+		this.tempMax = tempMax;
+	}
+
+	public Object getTempMax(){
+		return tempMax;
+	}
+
+	@Override
+ 	public String toString(){
+		return 
+			"Main{" + 
+			"temp = '" + temp + '\'' + 
+			",temp_min = '" + tempMin + '\'' + 
+			",humidity = '" + humidity + '\'' + 
+			",pressure = '" + pressure + '\'' + 
+			",feels_like = '" + feelsLike + '\'' + 
+			",temp_max = '" + tempMax + '\'' + 
+			"}";
+		}
+}
